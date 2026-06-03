@@ -31,9 +31,10 @@ export default function Projects() {
             ENGINEERING WORK
           </h2>
           <p className="mt-4 max-w-2xl text-sm font-light text-muted-l">
-            Research, competition, and open-source projects across motor drives,
-            mixed-signal design, EV safety systems, and simulation — sourced from
-            verified coursework, internships, and competition results.
+            Applied engineering work spanning motor-drive control, mixed-signal
+            power electronics, EV safety subsystems, and end-to-end simulation.
+            Projects are grounded in coursework, lab internships, and competitive
+            design challenges with a strong focus on validation and reproducibility.
           </p>
         </motion.div>
 

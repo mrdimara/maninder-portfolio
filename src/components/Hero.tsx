@@ -6,7 +6,7 @@ import { fadeUp } from "@/lib/motion";
 import OscilloscopeWave from "./OscilloscopeWave";
 
 const stats = [
-  { value: "2026", label: "IEEE PEDES", sub: "Paper Submitted" },
+  { value: "2026", label: "IEEE PEDES", sub: "Paper Accepted" },
   { value: "6th", label: "Inter-IIT", sub: "ISRO VLSI · 22 IITs" },
   { value: "12th", label: "Formula Bharat", sub: "Engineering Design" },
 ];
@@ -32,7 +32,7 @@ export default function Hero() {
           animate="visible"
           className="mb-6 font-mono text-[11px] uppercase tracking-[0.25em] text-amber"
         >
-          B.Tech EE · {SITE.institution} · EMPES Lab, IIT Bombay
+          B.Tech EE · {SITE.institution} · EMPES Lab, IIT Bombay · Mechismu Racing Electric
         </motion.p>
 
         <motion.h1
@@ -54,8 +54,7 @@ export default function Hero() {
           animate="visible"
           className="mt-6 max-w-3xl text-[15px] font-light tracking-[0.06em] text-muted-l"
         >
-          Power Electronics · Motor Drives · Mixed-Signal · Embedded Control ·
-          EV Systems
+        Power Electronics · Motor Drives · EV Systems · Simulation · Mixed-Signal · Embedded Control · Digital Design
         </motion.p>
 
         <motion.div

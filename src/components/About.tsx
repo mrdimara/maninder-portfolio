@@ -25,7 +25,7 @@ const profileRows = [
     value: "Mechismu Racing Electric",
     href: SITE.mechismu,
   },
-  { key: "Status", value: "Open to Internships & Research Collabs" },
+  { key: "Status", value: "Open to Roles & Research Collabs" },
 ];
 
 export default function About() {
@@ -73,12 +73,12 @@ export default function About() {
                 hardware.
               </p>
               <p>
-                Incoming intern at{" "}
+                 Interning at{" "}
                 <span className="text-text">{INTERNSHIP.lab}</span>, IIT Bombay
                 ({INTERNSHIP.term}) on gate-driver characterisation. IEEE PEDES
                 2026 paper submitted on six-phase IM IRFOC with Loss Model
                 Controller; 6th nationally in the ISRO VLSI Challenge (~19.7 ENOB
-                CT ΔΣ ADC); Vice Captain and safety/BMS lead for Formula Bharat
+                CT ΔΣ ADC); Vice Captain and Low Voltage Electronics lead for Formula Bharat
                 2025 with{" "}
                 <a
                   href={SITE.mechismu}
@@ -91,10 +91,11 @@ export default function About() {
                 .
               </p>
               <p>
-                Targeting R&D roles at Texas Instruments, Analog Devices, ABB,
-                Raptee.HV, and CERN Technical Studentship — with emphasis on
-                experimental validation, open-source simulation workflows, and
-                research-grade documentation.
+                Seeking research-driven roles that blend hands-on power electronics
+                development, experimental validation, and open-source simulation
+                workflows. I aim to deliver deeply documented, reproducible results
+                that bridge circuit-level design, control systems, and real-world
+                validation in high-performance mixed-signal and embedded systems.
               </p>
             </div>
 
@@ -103,8 +104,7 @@ export default function About() {
                 Leadership
               </p>
               <ul className="mt-3 space-y-2 text-xs font-light text-muted-l">
-                <li>Vice Captain — Mechismu Racing Electric (Formula Bharat)</li>
-                <li>LV Head — e-Mobility Club, IIT (ISM) Dhanbad</li>
+                <li>Vice Captain — Mechismu Racing Electric (Formula Student Team)</li>
                 <li>Technical Secretary — Amber Hostel Executive Committee</li>
               </ul>
             </div>

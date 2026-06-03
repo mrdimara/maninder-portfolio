@@ -16,10 +16,9 @@ export default function Contact() {
             GET IN TOUCH
           </h2>
           <p className="mx-auto mt-6 max-w-[560px] text-sm font-light leading-relaxed text-muted-l">
-            Open to industry internships, research collaborations, and EV & power
-            electronics projects. Targeting CERN Technical Studentship and R&D
-            roles at TI, Analog Devices, ABB, Infineon, and EV startups including
-            Raptee.HV.
+            Interested in applied research, hands-on power electronics development,
+            and EV system engineering — especially work that combines simulation,
+            prototype validation, and real-time control implementation.
           </p>
         </motion.div>
 
@@ -74,7 +73,7 @@ export default function Contact() {
             © 2026 {SITE.name} · {SITE.admissionNo}
           </p>
           <p className="font-mono text-[10px] text-muted">
-            Power Electronics · Motor Drives · EV Systems
+            Power Electronics · Motor Drives · EV Systems · Simulation · Mixed-Signal · Embedded Control · Digital Design
           </p>
         </footer>
       </div>
