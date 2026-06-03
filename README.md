@@ -1,6 +1,16 @@
 # Maninder Singh — Portfolio
 
-Single-page portfolio for power electronics, motor drives, and EV systems work.
+**Version 2.0.0** · [Live site](https://maninder-portfolio-ten.vercel.app) · [GitHub](https://github.com/mrdimara/maninder-portfolio)
+
+Single-page research-engineering portfolio for power electronics, motor drives, mixed-signal design, and EV systems.
+
+## v2.0.0 — What's included
+
+- Full project catalog (10 engineering projects) with GitHub / Mechismu links
+- Research section: IEEE PEDES 2026 (submitted) + competition results
+- Profile photo, IIT & personal email, LinkedIn `/in/mrdimara`
+- EMPES IIT Bombay internship details, leadership, expanded skills
+- Dark PCB / oscilloscope theme (unchanged from v1)
 
 ## Stack
 
@@ -17,16 +27,17 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+## Deploy
 
-## Deploy (Vercel)
+Connected to Vercel via GitHub — pushes to `main` auto-deploy. Manual:
 
 ```bash
 npx vercel --prod
 ```
 
-Or connect the GitHub repo in the Vercel dashboard for automatic deploys on push.
+## Releases
 
-## Contact placeholders
-
-Email and LinkedIn are set from resume (`maninderjakhwala@gmail.com`, LinkedIn `/in/manindersingh`). Update in `src/components/Contact.tsx` if needed.
+| Tag | Description |
+|-----|-------------|
+| `v2.0.0` | Full profile, 10 projects, research section, contact updates |
+| `v1.0.0` | Initial MVP — 5 projects, core sections |
