@@ -1,5 +1,7 @@
 "use client";
 
+import { SITE } from "@/data/site";
+
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#research", label: "Research" },
@@ -39,12 +41,21 @@ export default function Nav() {
           ))}
         </ul>
 
-        <a
-          href="#contact"
-          className="rounded-btn bg-amber px-4 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-[#07070C] transition-opacity hover:opacity-90"
-        >
-          Hire Me
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href={SITE.resume}
+            download
+            className="rounded-btn border border-border px-4 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-l transition-colors hover:border-border-h hover:text-text"
+          >
+            Resume
+          </a>
+          <a
+            href="#contact"
+            className="rounded-btn bg-amber px-4 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-[#07070C] transition-opacity hover:opacity-90"
+          >
+            Hire Me
+          </a>
+        </div>
       </div>
     </nav>
   );

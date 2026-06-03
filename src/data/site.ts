@@ -15,6 +15,7 @@ export const SITE = {
   github: "https://github.com/mrdimara",
   mechismu: "https://mechismu.nvcti.in/",
   portfolioUrl: "https://maninder-portfolio-ten.vercel.app",
+  resume: "/resume.pdf",
 } as const;
 
 export const INTERNSHIP = {

@@ -73,6 +73,13 @@ export default function Hero() {
             GitHub ↗
           </a>
           <a
+            href={SITE.resume}
+            download
+            className="rounded-btn border border-border px-5 py-2.5 font-mono text-[11px] uppercase tracking-wide text-muted-l transition-colors hover:border-border-h hover:text-text"
+          >
+            Download Resume
+          </a>
+          <a
             href="#projects"
             className="rounded-btn border border-border px-5 py-2.5 font-mono text-[11px] uppercase tracking-wide text-muted-l transition-colors hover:border-border-h hover:text-text"
           >
