@@ -10,7 +10,7 @@ export default function Skills() {
       <div className="mx-auto max-w-content">
         <motion.div {...sectionReveal}>
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-amber">
-            03 // Skills
+            04 // Skills
           </p>
           <h2 className="mt-3 font-display text-[52px] tracking-[0.03em]">
             TECHNICAL STACK

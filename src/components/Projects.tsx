@@ -1,6 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
+import { projects } from "@/data/projects";
+import { sectionReveal } from "@/lib/motion";
+
 function GitHubIcon({ size = 14 }: { size?: number }) {
   return (
     <svg
@@ -14,23 +18,26 @@ function GitHubIcon({ size = 14 }: { size?: number }) {
     </svg>
   );
 }
-import { projects } from "@/data/projects";
-import { sectionReveal } from "@/lib/motion";
 
 export default function Projects() {
   return (
-    <section id="projects" className="section-pad bg-surface">
+    <section id="projects" className="section-pad bg-bg">
       <div className="mx-auto max-w-content">
         <motion.div {...sectionReveal}>
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-amber">
-            02 // Projects
+            03 // Projects
           </p>
           <h2 className="mt-3 font-display text-[52px] tracking-[0.03em]">
-            SELECTED WORK
+            ENGINEERING WORK
           </h2>
+          <p className="mt-4 max-w-2xl text-sm font-light text-muted-l">
+            Research, competition, and open-source projects across motor drives,
+            mixed-signal design, EV safety systems, and simulation — sourced from
+            verified coursework, internships, and competition results.
+          </p>
         </motion.div>
 
-        <div className="mt-12 grid grid-cols-1 gap-5 min-[640px]:grid-cols-[repeat(auto-fill,minmax(280px,1fr))] min-[900px]:grid-cols-[repeat(auto-fill,minmax(420px,1fr))]">
+        <div className="mt-12 grid grid-cols-1 gap-5 min-[640px]:grid-cols-[repeat(auto-fill,minmax(280px,1fr))] min-[900px]:grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
           {projects.map((project, index) => (
             <motion.article
               key={project.id}
@@ -39,10 +46,10 @@ export default function Projects() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{
                 duration: 0.6,
-                delay: index * 0.08,
+                delay: Math.min(index * 0.05, 0.4),
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="flex flex-col rounded-card border border-border bg-bg p-7 transition-all duration-[250ms] ease-out hover:-translate-y-1 hover:border-border-h hover:shadow-[0_12px_40px_var(--amber-dim)]"
+              className="flex flex-col rounded-card border border-border bg-surface p-7 transition-all duration-[250ms] ease-out hover:-translate-y-1 hover:border-border-h hover:shadow-[0_12px_40px_var(--amber-dim)]"
             >
               <div className="mb-4 flex items-start justify-between gap-3">
                 <span className="text-[26px]" aria-hidden>
@@ -80,27 +87,40 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="mt-5 flex items-center justify-between border-t border-border pt-4">
-                <div className="flex items-center gap-2">
+              <div className="mt-5 flex items-center justify-between gap-3 border-t border-border pt-4">
+                <div className="flex min-w-0 items-center gap-2">
                   <span
                     className="h-[5px] w-[5px] shrink-0 rounded-full"
                     style={{ backgroundColor: project.statusColor }}
                   />
-                  <span className="font-mono text-[10px] text-muted">
+                  <span className="font-mono text-[10px] leading-snug text-muted">
                     {project.highlight}
                   </span>
                 </div>
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-btn border border-border p-2 text-muted transition-colors hover:border-amber hover:text-amber"
-                    aria-label={`GitHub — ${project.title}`}
-                  >
-                    <GitHubIcon />
-                  </a>
-                )}
+                <div className="flex shrink-0 gap-2">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-btn border border-border p-2 text-muted transition-colors hover:border-amber hover:text-amber"
+                      aria-label={`GitHub — ${project.title}`}
+                    >
+                      <GitHubIcon />
+                    </a>
+                  )}
+                  {project.external && (
+                    <a
+                      href={project.external}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-btn border border-border p-2 text-muted transition-colors hover:border-amber hover:text-amber"
+                      aria-label={`External link — ${project.title}`}
+                    >
+                      <ExternalLink size={14} />
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.article>
           ))}

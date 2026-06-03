@@ -1,12 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { SITE } from "@/data/site";
 import { fadeUp } from "@/lib/motion";
 import OscilloscopeWave from "./OscilloscopeWave";
 
 const stats = [
   { value: "2026", label: "IEEE PEDES", sub: "Paper Submitted" },
-  { value: "6th", label: "Inter-IIT", sub: "ISRO VLSI Challenge" },
+  { value: "6th", label: "Inter-IIT", sub: "ISRO VLSI · 22 IITs" },
   { value: "12th", label: "Formula Bharat", sub: "Engineering Design" },
 ];
 
@@ -31,7 +32,7 @@ export default function Hero() {
           animate="visible"
           className="mb-6 font-mono text-[11px] uppercase tracking-[0.25em] text-amber"
         >
-          B.Tech EE · IIT (ISM) Dhanbad · EMPES Lab, IIT Bombay
+          B.Tech EE · {SITE.institution} · EMPES Lab, IIT Bombay
         </motion.p>
 
         <motion.h1
@@ -51,9 +52,10 @@ export default function Hero() {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="mt-6 max-w-2xl text-[15px] font-light tracking-[0.06em] text-muted-l"
+          className="mt-6 max-w-3xl text-[15px] font-light tracking-[0.06em] text-muted-l"
         >
-          Power Electronics · Motor Drives · Embedded Control · EV Systems
+          Power Electronics · Motor Drives · Mixed-Signal · Embedded Control ·
+          EV Systems
         </motion.p>
 
         <motion.div
@@ -64,7 +66,7 @@ export default function Hero() {
           className="mt-10 flex flex-wrap gap-[14px]"
         >
           <a
-            href="https://github.com/mrdimara"
+            href={SITE.github}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-btn bg-amber px-5 py-2.5 font-mono text-[11px] uppercase tracking-wide text-[#07070C] transition-opacity hover:opacity-90"
@@ -76,6 +78,14 @@ export default function Hero() {
             className="rounded-btn border border-border px-5 py-2.5 font-mono text-[11px] uppercase tracking-wide text-muted-l transition-colors hover:border-border-h hover:text-text"
           >
             View Projects
+          </a>
+          <a
+            href={SITE.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-btn border border-border px-5 py-2.5 font-mono text-[11px] uppercase tracking-wide text-muted-l transition-colors hover:border-border-h hover:text-text"
+          >
+            LinkedIn ↗
           </a>
           <a
             href="#contact"

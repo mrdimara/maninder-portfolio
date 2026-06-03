@@ -5,9 +5,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Maninder Singh — Power Electronics & Motor Drives",
   description:
-    "IIT (ISM) Dhanbad EE student. IEEE PEDES 2026 author. " +
-    "Power electronics, motor drives, embedded control, EV systems. " +
-    "EMPES Lab IIT Bombay intern.",
+    "IIT (ISM) Dhanbad EE student · IEEE PEDES 2026 (submitted) · " +
+    "Six-phase IRFOC · ISRO VLSI 6th · Formula Bharat · EMPES IIT Bombay intern. " +
+    "Power electronics, motor drives, mixed-signal, EV systems.",
   keywords: [
     "power electronics",
     "motor drives",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Maninder Singh — Power Electronics & Motor Drives",
     description: "IIT EE student. IEEE PEDES 2026. Formula Bharat EV.",
-    url: "https://mrdimara.vercel.app",
+    url: "https://maninder-portfolio-ten.vercel.app",
     type: "website",
   },
 };

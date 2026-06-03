@@ -2,6 +2,7 @@
 
 const navLinks = [
   { href: "#about", label: "About" },
+  { href: "#research", label: "Research" },
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
@@ -25,7 +26,7 @@ export default function Nav() {
           MS<span className="cursor-blink">_</span>
         </a>
 
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-6 lg:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
